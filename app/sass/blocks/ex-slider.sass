@@ -1,0 +1,61 @@
+.ex-slider
+	text-align: center
+	&__title
+		margin-bottom: 48px
+		@include media-breakpoint-down(sm)
+			margin-bottom: 24px
+	// &__box
+	&__slider
+		position: relative
+		// padding: 0 50px
+		max-width: 1000px
+		margin: 0 auto
+		margin-bottom: 48px
+		@include media-breakpoint-down(xl)
+			width: 800px
+		@include media-breakpoint-down(lg)
+			width: 500px
+		@include media-breakpoint-down(md)
+			// width: 400px
+		@include media-breakpoint-down(sm)
+			width: 232px
+			margin-bottom: 24px
+	&__slider-prev,
+	&__slider-next
+		position: absolute
+		cursor: pointer
+		top: 50%
+		transform: translateY(-50%)
+		width: 64px
+		height: 64px
+		border-radius: 50px
+		border: 2px solid $accent
+		background-repeat: no-repeat
+		background-position: center
+		z-index: 999
+		@include media-breakpoint-down(lg)
+			width: 50px
+			height: 50px
+			background-size: 25px
+			border: 1px solid $accent
+		@include media-breakpoint-down(sm)
+			width: 30px
+			height: 30px
+	&__slider-prev
+		left: -90px
+		background-image: url(../images/icons/prev.svg)
+		@include media-breakpoint-down(md)
+			left: 50px
+		@include media-breakpoint-down(sm)
+			left: -40px
+	&__slider-next
+		right: -90px
+		background-image: url(../images/icons/next.svg)
+		@include media-breakpoint-down(md)
+			right: 50px
+		@include media-breakpoint-down(sm)
+			right: -40px
+	&__image
+		width: 100%
+		@include media-breakpoint-down(md)
+			width: auto

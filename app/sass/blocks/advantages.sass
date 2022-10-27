@@ -1,0 +1,28 @@
+.advantages
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+	&__title
+		margin-bottom: 32px
+		text-align: center
+		@include media-breakpoint-down(sm)
+			margin-bottom: 24px
+	&__list
+		display: grid
+		grid-template-columns: repeat(3, 1fr)
+		gap: 28px
+		@include media-breakpoint-down(lg)
+			grid-template-columns: repeat(2, 1fr)
+		@include media-breakpoint-down(sm)
+			grid-template-columns: repeat(1, 1fr)
+			gap: 16px
+	&__list-item
+		border: 1px solid #003284
+		padding: 30px 16px
+		text-align: center
+		background-color: #fff
+	&__list-icon
+		margin-bottom: 16px
+	&__list-title
+		font-size: 18px
+		font-size: 16px

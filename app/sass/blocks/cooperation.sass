@@ -1,0 +1,17 @@
+.cooperation
+	background-color: #fafafa
+	text-align: center
+	&__title
+	&__image
+		display: flex
+		justify-content: center
+		gap: 40px
+		margin-top: 32px
+		align-items: center
+		@include media-breakpoint-down(sm)
+			flex-direction: column
+			margin-top: 16px
+			gap: 24px
+		img
+			@include media-breakpoint-down(sm)
+				width: 110px

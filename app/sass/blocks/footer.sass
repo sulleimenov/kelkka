@@ -1,0 +1,22 @@
+.footer
+	padding: 48px 0
+	background-color: #fafafa
+	&__logo
+	&__inner
+		display: flex
+		align-items: center
+		justify-content: space-between
+		gap: 28px
+		@include media-breakpoint-down(lg)
+			flex-direction: column-reverse
+	&__menu
+		display: flex
+		gap: 48px
+		@include media-breakpoint-down(xl)
+			gap: 16px
+		@include media-breakpoint-down(lg)
+			flex-direction: column
+			text-align: center
+	&__menu-item
+		text-decoration: none
+		text-transform: uppercase

@@ -1,0 +1,30 @@
+.offer
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+	padding: 100px 0 164px
+	@include media-breakpoint-down(sm)
+		padding: 64px 0
+	// &__box
+	&__title
+		font-size: 48px
+		font-weight: 900
+		margin-bottom: 32px
+		@include media-breakpoint-down(lg)
+			font-size: 38px
+		@include media-breakpoint-down(sm)
+			font-size: 28px
+			margin-bottom: 16px
+		span
+			color: $accent
+	&__subtitle
+		margin-bottom: 40px
+		width: 50%
+		font-weight: 600
+		font-size: 22px
+		@include media-breakpoint-down(lg)
+			font-size: 26px
+		@include media-breakpoint-down(sm)
+			font-size: 16px
+			width: 100%
+			margin-bottom: 32px

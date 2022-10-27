@@ -1,0 +1,52 @@
+.container
+	width: 100%
+	padding-left: 15px
+	padding-right: 15px
+	margin: 0 auto
+	max-width: 1320px
+	@include media-breakpoint-down(xxl)
+		max-width: 1140px
+	@include media-breakpoint-down(xl)
+		max-width: 960px
+	@include media-breakpoint-down(lg)
+		max-width: 720px
+	@include media-breakpoint-down(md)
+		max-width: 540px
+	@include media-breakpoint-down(sm)
+
+.button
+	display: inline-block
+	padding: 20px 40px 17px
+	background-color: $accent
+	border-radius: 50px
+	text-transform: uppercase
+	text-decoration: none
+	color: $textcolor
+	font-weight: 600
+	@include media-breakpoint-down(sm)
+		padding: 14px 32px
+		font-size: 14px
+
+.button--outline
+	border: 1px solid $textcolor
+	background-color: #fff
+
+.title
+	font-size: 36px
+	font-weight: 700
+	@include media-breakpoint-down(sm)
+		font-size: 18px
+	span
+		color: $accent
+		font-weight: 700
+
+.title-small
+	font-size: 28px
+	font-weight: 700
+	@include media-breakpoint-down(sm)
+		font-size: 16px
+
+section
+	padding: 64px 0
+	@include media-breakpoint-down(lg)
+		padding: 32px 0
