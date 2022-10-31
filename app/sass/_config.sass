@@ -2,7 +2,7 @@ $accent: #00F803
 $fontsize: 18px
 $textcolor: #003284
 $lineheight: 1.65
-$userfont: 'Roboto', sans-serif
+$userfont: 'Inter', sans-serif
 
 // Colors
 // $green: #00F803
@@ -25,10 +25,14 @@ $gutter: $grid-gutter-width
 		font-weight: $fontweight
 		src: url($fonturl) format('truetype')
 
-@include font('Roboto', normal, 400, '../fonts/Roboto-Regular.ttf')
-@include font('Roboto', italic, 400, '../fonts/Roboto-Italic.ttf')
-@include font('Roboto', normal, 700, '../fonts/Roboto-Bold.ttf')
-@include font('Roboto', italic, 700, '../fonts/Roboto-BoldItalic.ttf')
+@include font('Inter', normal, 400, '../fonts/Inter-Regular.ttf')
+// @include font('Inter', italic, 400, '../fonts/Inter-Italic.ttf')
+@include font('Inter', normal, 500, '../fonts/Inter-Medium.ttf')
+@include font('Inter', normal, 600, '../fonts/Inter-SemiBold.ttf')
+@include font('Inter', normal, 700, '../fonts/Inter-Bold.ttf')
+@include font('Inter', normal, 900, '../fonts/Inter-Black.ttf')
+
+@include font('Poppins', normal, 600, '../fonts/Poppins-SemiBold.ttf')
 
 // General css
 ::placeholder
@@ -61,3 +65,5 @@ body
 	overflow-x: hidden
 	@include media-breakpoint-down(sm)
 		font-size: 16px
+	&.lock
+		overflow-y: hidden
